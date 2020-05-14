@@ -62,7 +62,7 @@ class App extends Component {
             <tbody>
               {sensors.map(sensor => (
                 <tr>
-                  <td>{sensor.sensor_id}</td>
+                  <td>{sensor.id}</td>
                   <td>{sensor.floor_no}</td>
                   <td>{sensor.room_no}</td>
                   <td>{sensor.co2_level}</td>
