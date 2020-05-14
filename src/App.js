@@ -67,7 +67,7 @@ class App extends Component {
                   <td>{sensor.room_no}</td>
                   <td>{sensor.co2_level}</td>
                   <td>{sensor.smoke_level}</td>
-                  <td>{sensor.status ? <span className="greendot"></span> : <span className="reddot"></span>}</td>
+                  <td>{((sensor.co2_level > 5) ||(sensor.smoke_level>5)) ? <span className="reddot"></span> : <span className="greendot"></span>}</td>
                 </tr>
               ))}
             </tbody>
